@@ -1,0 +1,149 @@
+/* file: styles/Home.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.searchForm {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.searchForm input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchForm button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.videoCard, .channelCard, .streamCard {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.videoCard:hover, .streamCard:hover {
+    transform: translateY(-5px);
+}
+
+.videoCard img, .streamCard img {
+    width: 100%;
+    height: auto;
+}
+
+.channelThumbnail {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 1rem auto;
+    display: block;
+}
+
+.liveBadge {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: white;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/* file: styles/Video.module.css */
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.videoPlayer iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+}
+
+.videoDetails {
+    margin-top: 1.5rem;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.authorThumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.stats {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.stats span {
+    margin-right: 1rem;
+}
+
+.description {
+    margin-top: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.recommendedVideos {
+    margin-top: 3rem;
+}
+
+.recommendedVideos h2 {
+    margin-bottom: 1rem;
+}
+
+.recommendedCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.recommendedCard img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
